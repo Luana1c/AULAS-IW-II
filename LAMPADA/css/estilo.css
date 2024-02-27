@@ -6,5 +6,15 @@ main{
 }
 button{
     width: 80px;
-    background-color: aqua;
+    background-color: #e0b44a;
+    border-radius: 4px;
 }
+h2{
+    text-align: center;
+    color: #f3ead8;
+}
+body{
+    background-color: #dfcf99;
+}
+/* #f3ead8 br
+#e0b44a */
