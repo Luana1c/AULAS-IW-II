@@ -7,8 +7,28 @@
     <title>EXEMPLO</title>
 </head>
 <body>
-   DIGITE SEU NOME:
-   <input id="nome" name="nome" value="" type="text">
-    <button id="botao">CLIQUE</button>
+   <!-- DIGITE SEU NOME:
+     <input id="nome" name="nome" value="" type="text">
+     <button id="botao" onclick="pegaNome()">CLIQUE</button>
+     <p id="resultado">SEU NOME APARECE AQUI</p> -->
+  <h1>Calculadora</h1>
+   
+<!-- modelo para o primeiro e segundo numero -->
+        <h2>Digite o primeiro número:</h2>
+        <input id="numero1" type="number">
+        <button id="botao">CLIQUE</button>
+        <h2>Digite o segundo número:</h2>
+        <input id="numero2" type="number">
+        <button id="botao">CLIQUE</button>
+
+<!-- modelo para os botões -->
+         <p>Escolha a operação abaixo:</p>
+         <button id="botao" onclick="somar">somar</button>
+         <button id="botao" onclick="subtrair">subtrair</button>
+         <button id="botao" onclick="multiplicar">multiplicar</button>
+         <button id="botao" onclick="dividir">dividir</button>
+
+<h3>o resultado é<span id="resultado"></span>0</h3>
+    <script src="js/executa.js"></script>
 </body>
 </html>
