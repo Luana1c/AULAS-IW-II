@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXEMPLO</title>
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora</title>
 </head>
 <body>
-   <!-- DIGITE SEU NOME:
-     <input id="nome" name="nome" value="" type="text">
-     <button id="botao" onclick="pegaNome()">CLIQUE</button>
-     <p id="resultado">SEU NOME APARECE AQUI</p> -->
-  <h1>Calculadora</h1>
-   
-<!-- modelo para o primeiro e segundo numero -->
-        <h2>Digite o primeiro número:</h2>
-        <input id="numero1" type="number">
-        <button id="botao">CLIQUE</button>
-        <h2>Digite o segundo número:</h2>
-        <input id="numero2" type="number">
-        <button id="botao">CLIQUE</button>
-
-<!-- modelo para os botões -->
-         <p>Escolha a operação abaixo:</p>
-         <button id="botao" onclick="somar">somar</button>
-         <button id="botao" onclick="subtrair">subtrair</button>
-         <button id="botao" onclick="multiplicar">multiplicar</button>
-         <button id="botao" onclick="dividir">dividir</button>
-
-<h3>o resultado é<span id="resultado"></span>0</h3>
+  <div class="fundo">
+     <h1 class="corf">CALCULADORA </h1>
+     <H1>DA</H1>
+     <H1>LUANA</H1>
+        <div class="calculadora">
+          <h1>Calculadora</h1>
+          <p id="resultado"></p>
+          <!-- a tabela vai ser a minha calculadora -->
+          <table>
+           <!--  O `tr` e cada linha da tabela, esse em especifico e a primeira linha -->
+                <tr>
+                  <!-- cada botao da calculadora da primeira linha -->
+                  <td><button class="botao" onclick="clean()">C</button></td>
+                  <td><button class="botao" onclick="back()"><</button></td>
+                  <td><button class="botao" onclick="insert('/')">/</button></td>
+                  <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                  <td><button class="botao" onclick="insert('7')">7</button></td>
+                  <td><button class="botao" onclick="insert('8')">8</button></td>
+                  <td><button class="botao" onclick="insert('9')">9</button></td>
+                  <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                  <td><button class="botao" onclick="insert('4')">4</button></td>
+                  <td><button class="botao" onclick="insert('5')">5</button></td>
+                  <td><button class="botao" onclick="insert('6')">6</button></td>
+                  <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                  <td><button class="botao" onclick="insert('1')">1</button></td>
+                  <td><button class="botao" onclick="insert('2')">2</button></td>
+                  <td><button class="botao" onclick="insert('3')">3</button></td>
+                  <!-- rowspan faz cpm que use quantas linhas eu quiser por isso row -->
+                  <td rowspan="2"><button class="botao au" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                   <!-- colspan faz com q use quantas colunas eu quiser por isso col -->
+                  <td colspan="2"><button class="botao lado" onclick="insert('0')">0</button></td>
+                  <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+          </table>
+        </div>
+  </div>
+  
     <script src="js/executa.js"></script>
 </body>
 </html>
