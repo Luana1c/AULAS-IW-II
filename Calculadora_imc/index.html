@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="img/menina.png">
     <link rel="stylesheet" href="style.css">
-    <title>calculadora em imc</title>
+    <link rel="stylesheet" href="img/menina.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Calculadora em imc</title>
 </head>
 <body>
   <main id="container">
@@ -21,9 +22,38 @@
                 Peso em KG
             </label>
             <div class="input-field">
+                <i class="fa-solid fa-weight-hanging"></i>
+                <input type="number" id="weight" required>
+                <span>Kg</span>
             </div>
         </div>
+        <div class="input-box">
+        <label for="height">
+            Altura em metros
+        </label>
+        <div class="input-field">
+            <i class="fa-solid fa-ruler"></i>
+            <input type="number" id="height" required>
+            <span>m</span>
+        </div>
+        </div>
+             <button id="calculete">CALCULAR</button>
      </form>
+        <div id="infos">
+           <div id="result">
+              <div id="bmi">
+                <span id="value"></span>
+                <span>SEU IMC</span>
+              </div>
+              <div id="description">
+                <span></span>
+              </div>
+            </div>
+            <div id="more info">
+                <a href="https//:"></a>
+            </div>
+        </div>
+    
     </section>
 
 
