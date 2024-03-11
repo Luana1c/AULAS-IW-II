@@ -5,63 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="img/menina.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Calculadora em imc</title>
 </head>
 <body>
-  <main id="container">
-    <section id="img">
-        <img src="img/menina.png" alt="">
-    </section>
-    <section id="calculadora">
-     <form id="form">
-    <h1 id="titulo">Calculadora de IMC</h1>
-        <div>
-            <label for="weight">
-                Peso em KG
-            </label>
-            <div class="input-field">
-                <i class="fa-solid fa-weight-hanging"></i>
-                <input type="number" id="weight" required>
-                <span>Kg</span>
-            </div>
-        </div>
-        <div class="input-box">
-        <label for="height">
-            Altura em metros
-        </label>
-        <div class="input-field">
-            <i class="fa-solid fa-ruler"></i>
-            <input type="number" id="height" required>
-            <span>m</span>
-        </div>
-        </div>
-             <button id="calculete">CALCULAR</button>
-     </form>
-        <div id="infos">
-           <div id="result">
-              <div id="bmi">
-                <span id="value"></span>
-                <span>SEU IMC</span>
-              </div>
-              <div id="description">
-                <span></span>
-              </div>
-            </div>
-            <div id="more info">
-                <a href="https//:"></a>
-            </div>
-        </div>
-    
-    </section>
-
-
-
-
-
-
-  </main>
-    
+    <h1> CALCULADORA DE IMC DA LUANA</h1>
+    <div class="nome">
+            <h2>NOME</h2>
+            <input id="nome" type="text">
+    </div>
+    <div>
+            <h2>ALTURA</h2>
+            <input id="altura" type="number">
+    </div>
+    <div>
+            <h2>PESO</h2>
+            <input id="peso" type="number">
+    </div>
+    <div >
+            <button class="botao" onclick="calcular()"> CALCULAR </button>
+    </div>
+    <br>
+    <textarea id="texto" cols="21" rows="3"></textarea>
+    <script src="js/executa.js"></script>
 </body>
 </html>
