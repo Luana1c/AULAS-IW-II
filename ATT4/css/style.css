@@ -1,0 +1,24 @@
+.btn {
+    padding: 10px 20px;
+    background-color: #ee698a;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding-left: 12%;
+    padding-right: 12%;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+p {
+    font-size: 18px;
+    color: #333;
+}
+h1{
+    text-align: center;
+    color: #333;
+}
+body{
+    background-color: beige;
+}
