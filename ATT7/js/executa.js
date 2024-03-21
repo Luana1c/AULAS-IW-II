@@ -6,7 +6,7 @@ function reajuste(){
     funcionario.innerHTML = NOMEFUNC
     salario.innerHTML = SALARIO 
     porcentagem.innerHTML = PORC
-    soma = (PORC*SALARIO)/100
+    soma = (porcentagem*SALARIO)/100
     aumento.innerHTML = soma
     final.innerHTML= SALARIO + soma
 

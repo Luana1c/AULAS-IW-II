@@ -1,6 +1,5 @@
 .btn {
     padding: 10px 20px;
-    background-color: #ee698a;
     color: #fff;
     border: none;
     border-radius: 10px;
@@ -21,4 +20,16 @@ h1{
 }
 body{
     background-color: beige;
+}
+.btn1{
+background-color: crimson;
+}
+.btn2{
+background-color: blue;
+}
+.btn3{
+background-color: chartreuse;
+}
+h2{
+    text-align: center;
 }
