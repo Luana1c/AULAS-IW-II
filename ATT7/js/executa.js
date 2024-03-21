@@ -1,13 +1,13 @@
 function reajuste(){
-    var NOMEFUNC = prompt('O nome do funcionário: ')
-    var SALARIO = parseFloat(prompt('Informe o valor do salário de ' + NOMEFUNC + ': '))
-    var porcentagem = parseFloat(prompt('Qual a porcentagem que o salário de ' + NOMEFUNC + ' será ajustado? '))
-    nome.innerHTML = NOMEFUNC
-    funcionario.innerHTML = NOMEFUNC
-    salario.innerHTML = SALARIO 
-    porcentagem.innerHTML = PORC
-    soma = (porcentagem*SALARIO)/100
+    var nome = prompt('O nome do funcionário: ')
+    var salario = parseFloat(prompt('Informe o valor do salário de ' + nome + ': '))
+    var porcentagem = parseFloat(prompt('Qual a porcentagem que o salário de ' + nome + ' será ajustado? '))
+    nome.innerHTML = nome
+    funcionario.innerHTML = nome
+    salario.innerHTML = salario 
+    porcentagem.innerHTML = porcentagem
+    soma = (porcentagem*salario)/100
     aumento.innerHTML = soma
-    final.innerHTML= SALARIO + soma
+    final.innerHTML= salario + soma
 
 }
